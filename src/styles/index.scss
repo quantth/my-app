@@ -1,0 +1,154 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+blockquote,
+body,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+ol,
+p,
+pre,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+blockquote,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p,
+pre,
+table,
+ul {
+    margin-bottom: 0.2rem;
+}
+
+body {
+    font: 300 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "JetBrains Mono", monospace;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.725;
+}
+
+a {
+    color: #0645ad;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+blockquote {
+    color: #6a6a6a;
+    padding-left: 1rem;
+    border-left: 2px solid #eaeaea;
+    font-style: italic;
+    font-size: 0.875rem;
+}
+
+.App {
+    position: relative;
+    padding: 2rem 1.5rem;
+    margin: 1rem auto;
+    box-sizing: border-box;
+    max-width: 48rem;
+
+    .content {
+        margin-top: 2rem;
+    }
+}
+
+.navbar {
+    display: block;
+    border-bottom: 1px solid #eaeaea;
+    margin-top: -2rem;
+    max-width: 48rem;
+
+    .smallcap {
+        font-size: 1.5rem;
+        font-weight: bold;
+
+        a {
+            text-decoration: none;
+            letter-spacing: 2px;
+            background-color: #333;
+            color: #eee;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+
+            &:hover {
+                text-decoration: none;
+                letter-spacing: 2px;
+                background-color: #333;
+                color: #eee;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                padding-top: 0.2rem;
+                padding-bottom: 0.2rem;
+            }
+        }
+    }
+
+    .in--touch {
+        i {
+            padding: 0 0.5rem;
+        }
+    }
+}
+
+.posts {
+    .posts--list {
+        margin-left: 1.5em;
+
+        li {
+            margin-bottom: 0.5rem;
+
+            a {
+                color: #333;
+                text-decoration: none;
+                font-weight: normal;
+
+                &:hover {
+                    color: #0645ad;
+                    text-decoration: underline;
+                }
+            }
+
+            time {
+                font-size: 0.875rem;
+                color: #aaa;
+                display: inline-block;
+                margin-left: 0.5rem;
+
+                @media screen and (max-width: 600px) {
+                    display: block;
+                    font-size: 0.875rem;
+                    margin-left: 0;
+                }
+            }
+
+            .posts--tags {
+                color: #aaa;
+            }
+        }
+    }
+}
